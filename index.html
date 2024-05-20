@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land Pricing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Land Pricing in Famous Locations</h1>
+    </header>
+    <main>
+        <section class="controls">
+            <div class="toggle-pricing">
+                <button id="monthly" class="active">Monthly</button>
+                <button id="yearly">Yearly</button>
+            </div>
+            <div class="currency-selector">
+                <label for="currency">Currency:</label>
+                <select id="currency">
+                    <option value="usd" selected>USD</option>
+                    <option value="eur">EUR</option>
+                    <option value="gbp">GBP</option>
+                </select>
+            </div>
+        </section>
+        <section class="pricing">
+            <div class="pricing-card" data-location="New York">
+                <h3>Central Park, New York</h3>
+                <p class="price" data-monthly="50000" data-yearly="600000">$50,000/month</p>
+                <ul>
+                    <li>Area: 1 Acre</li>
+                    <li>Near City Center</li>
+                    <li>Greenery</li>
+                </ul>
+                <button class="toggle-details">More Details</button>
+                <div class="details">
+                    <p>Located in the heart of New York City, Central Park offers a serene environment amidst the bustling city.</p>
+                </div>
+            </div>
+            <div class="pricing-card" data-location="Paris">
+                <h3>Champ de Mars, Paris</h3>
+                <p class="price" data-monthly="45000" data-yearly="540000">$45,000/month</p>
+                <ul>
+                    <li>Area: 0.8 Acre</li>
+                    <li>Near Eiffel Tower</li>
+                    <li>Historical Significance</li>
+                </ul>
+                <button class="toggle-details">More Details</button>
+                <div class="details">
+                    <p>Located near the Eiffel Tower, Champ de Mars is a prime location with historical significance and beautiful scenery.</p>
+                </div>
+            </div>
+            <div class="pricing-card" data-location="Tokyo">
+                <h3>Shibuya Crossing, Tokyo</h3>
+                <p class="price" data-monthly="60000" data-yearly="720000">$60,000/month</p>
+                <ul>
+                    <li>Area: 0.5 Acre</li>
+                    <li>High Foot Traffic</li>
+                    <li>Commercial Hub</li>
+                </ul>
+                <button class="toggle-details">More Details</button>
+                <div class="details">
+                    <p>Shibuya Crossing is one of the busiest intersections in the world, making it a prime spot for commercial ventures.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
